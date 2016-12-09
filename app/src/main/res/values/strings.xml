@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Door</string>
+
+    <string name="url_for_open_command">http://192.168.2.180/?submitButton=UNLOCK</string>
+    <!--
+        <string name="url_for_open_command">http://192.168.2.177/?submitButton=Push</string>
+    -->
+
+    <string name="message_done">Done</string>
+    <string name="message_wifi_disabled">WiFi is disabled</string>
+    <string name="message_wifi_not_connected">No network connection</string>
+    <string name="error">Error</string>
+
+</resources>
