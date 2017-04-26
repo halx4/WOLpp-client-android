@@ -1,14 +1,26 @@
 <resources>
-    <string name="app_name">Door</string>
+    <string name="app_name">WOL++</string>
 
-    <string name="url_for_open_command">http://192.168.2.180/?submitButton=UNLOCK</string>
-    <!--
-        <string name="url_for_open_command">http://192.168.2.177/?submitButton=Push</string>
-    -->
+
 
     <string name="message_done">Done</string>
     <string name="message_wifi_disabled">WiFi is disabled</string>
     <string name="message_wifi_not_connected">No network connection</string>
     <string name="error">Error</string>
+
+    <string name="target_ssid">stoTavani2</string>
+    <string name="push_to_open">push to open</string>
+    <string name="sending_request">Sending request ...</string>
+    <string name="ready">ready</string>
+    <string name="settings">Settings</string>
+    <string name="exit">exit</string>
+    <string name="no_channel_placeholder">Default1</string>
+    <string name="settings_activity_label">settings activity label</string>
+    <string name="channel_id_preference">channel_id_preference</string>
+    <string name="write_api_key_preference">write_api_key_preference</string>
+    <string name="read_api_key_preference">read_api_key_preference</string>
+    <string name="is_publicly_readable_preference">is_publicly_readable_preference</string>
+    <string name="cannot_connect">cannot connect</string>
+
 
 </resources>

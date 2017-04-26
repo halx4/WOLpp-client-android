@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Door.iml" filepath="$PROJECT_DIR$/Door.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WOLPP.iml" filepath="$PROJECT_DIR$/WOLPP.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thingspeak/thingspeak.iml" filepath="$PROJECT_DIR$/thingspeak/thingspeak.iml" />
     </modules>
   </component>
 </project>

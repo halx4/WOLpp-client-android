@@ -1,40 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="android.foivos.door.MainActivity">
+    android:padding="10dp"
+    tools:context="android.foivos.WOLpp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:text="power status: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_label_textView"
+                android:background="@color/status_unknown"
+                android:textSize="@dimen/status_text_size"
+                android:textColor="#000000"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:text="---"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_textView"
+                android:background="@color/status_unknown"
+                android:textSize="@dimen/status_text_size"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:text="cmd: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/command_label_textView"
+                android:background="@color/command_indication"
+                android:textSize="@dimen/status_text_size"
+                android:textColor="#000000"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:text="---"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/command_textView"
+                android:background="@color/command_indication"
+                android:textSize="@dimen/status_text_size"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <TextView
-        android:text="TextView"
+        android:text="@string/ready"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:height="200dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="30sp"
+        android:id="@+id/main_textView"
         android:gravity="center"
+        android:background="@drawable/main_textview_format"
+        android:textSize="30sp"
+        android:layout_weight="3"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         />
 
-    <Button
-        android:text="OPEN"
-        android:textSize="40sp"
-        android:id="@+id/button"
-        android:height="200dp"
+    <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="openPushed"    />
+        android:layout_weight="2">
+
+        <Button
+            android:text="POWER\nSHORT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/power_short_button"
+            android:onClick="powerShortClicked"
+            android:background="@drawable/button_type_1"
+            android:textSize="25sp"
+            android:textColor="@drawable/button_type_1_text"
+            android:layout_weight="3"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_weight="2"
+            android:text="POWER\nLONG"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/power_long_button"
+            android:onClick="powerLongClicked"
+            android:background="@drawable/button_type_2"
+            android:textSize="15sp"
+            android:textColor="@drawable/button_type_2_text"
+            android:layout_marginLeft="2dp" />
+
+        <Button
+            android:layout_weight="2"
+            android:text="RESET"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/reset_button"
+            android:onClick="resetClicked"
+            android:background="@drawable/button_type_2"
+            android:textSize="15sp"
+            android:textColor="@drawable/button_type_2_text"
+            android:layout_marginLeft="2dp" />
+
+        <Button
+            android:layout_weight="1"
+            android:text="C\nL\nR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/clear_command_button"
+            android:onClick="clearCommandClicked"
+            android:background="@drawable/button_type_2"
+            android:textSize="15sp"
+            android:textColor="@drawable/button_type_2_text"
+            android:layout_marginLeft="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/update_button"
+            android:layout_weight="6"
+            android:onClick="updateClicked" />
+
+        <Button
+            android:text="Exit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/exit_button"
+            android:layout_weight="2"
+            android:onClick="exitClicked" />
 
 
-</RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
