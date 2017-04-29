@@ -1,17 +1,17 @@
-package android.foivos.WOLpp.android.foivos.WOLpp.AsyncTasks;
+package com.foivos.WOLpp.android.foivos.WOLpp.AsyncTasks;
 
 
-import android.foivos.WOLpp.MainActivity;
-import android.foivos.WOLpp.R;
-import android.foivos.WOLpp.UtilClasses.ChannelFeedPair;
-import android.foivos.WOLpp.UtilClasses.IndicationUpdaterResponse;
-import android.foivos.WOLpp.enums.Command;
-import android.foivos.WOLpp.enums.LedIndication;
 import android.os.AsyncTask;
 
 import com.angryelectron.thingspeak.Channel;
 import com.angryelectron.thingspeak.Entry;
 import com.angryelectron.thingspeak.ThingSpeakException;
+import com.foivos.WOLpp.MainActivity;
+import com.foivos.WOLpp.R;
+import com.foivos.WOLpp.UtilClasses.ChannelFeedPair;
+import com.foivos.WOLpp.UtilClasses.IndicationUpdaterResponse;
+import com.foivos.WOLpp.enums.Command;
+import com.foivos.WOLpp.enums.LedIndication;
 
 /**
  * Created by foivos on 08-Dec-16.

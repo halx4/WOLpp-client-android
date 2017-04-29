@@ -1,4 +1,4 @@
-package android.foivos.WOLpp.UtilClasses;
+package com.foivos.WOLpp.UtilClasses;
 
 import com.angryelectron.thingspeak.Channel;
 

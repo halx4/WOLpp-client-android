@@ -1,7 +1,7 @@
-package android.foivos.WOLpp.UtilClasses;
+package com.foivos.WOLpp.UtilClasses;
 
-import android.foivos.WOLpp.enums.Command;
-import android.foivos.WOLpp.enums.LedIndication;
+import com.foivos.WOLpp.enums.Command;
+import com.foivos.WOLpp.enums.LedIndication;
 
 /**
  * Created by foivos on 27-Dec-16.

@@ -1,4 +1,4 @@
-package android.foivos.WOLpp;
+package com.foivos.WOLpp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

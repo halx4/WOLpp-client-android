@@ -1,16 +1,16 @@
-package android.foivos.WOLpp.android.foivos.WOLpp.AsyncTasks;
+package com.foivos.WOLpp.android.foivos.WOLpp.AsyncTasks;
 
 
-import android.foivos.WOLpp.MainActivity;
-import android.foivos.WOLpp.R;
-import android.foivos.WOLpp.UtilClasses.ActionRequesterResponse;
-import android.foivos.WOLpp.UtilClasses.ChannelFeedCommandSet;
-import android.foivos.WOLpp.enums.Command;
 import android.os.AsyncTask;
 
 import com.angryelectron.thingspeak.Channel;
 import com.angryelectron.thingspeak.Entry;
 import com.angryelectron.thingspeak.ThingSpeakException;
+import com.foivos.WOLpp.MainActivity;
+import com.foivos.WOLpp.R;
+import com.foivos.WOLpp.UtilClasses.ActionRequesterResponse;
+import com.foivos.WOLpp.UtilClasses.ChannelFeedCommandSet;
+import com.foivos.WOLpp.enums.Command;
 
 import java.io.IOException;
 

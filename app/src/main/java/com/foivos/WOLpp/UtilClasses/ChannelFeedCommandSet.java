@@ -1,8 +1,7 @@
-package android.foivos.WOLpp.UtilClasses;
-
-import android.foivos.WOLpp.enums.Command;
+package com.foivos.WOLpp.UtilClasses;
 
 import com.angryelectron.thingspeak.Channel;
+import com.foivos.WOLpp.enums.Command;
 
 /**
  * Created by foivos on 27-Dec-16.

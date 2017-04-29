@@ -1,4 +1,4 @@
-package android.foivos.WOLpp.enums;
+package com.foivos.WOLpp.enums;
 
 /**
  * Created by foivos on 27-Dec-16.

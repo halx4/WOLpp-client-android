@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
     defaultConfig {
-        applicationId "android.foivos.WOLpp"
+        applicationId "com.foivos.WOLpp"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1

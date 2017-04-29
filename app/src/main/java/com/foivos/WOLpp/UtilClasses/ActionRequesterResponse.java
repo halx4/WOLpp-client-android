@@ -1,4 +1,4 @@
-package android.foivos.WOLpp.UtilClasses;
+package com.foivos.WOLpp.UtilClasses;
 
 /**
  * Created by foivos on 27-Dec-16.

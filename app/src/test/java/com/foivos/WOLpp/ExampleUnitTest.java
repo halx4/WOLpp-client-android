@@ -1,4 +1,4 @@
-package android.foivos.WOLpp;
+package com.foivos.WOLpp;
 
 import org.junit.Test;
 

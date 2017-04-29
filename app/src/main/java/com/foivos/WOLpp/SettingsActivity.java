@@ -1,4 +1,4 @@
-package android.foivos.WOLpp;
+package com.foivos.WOLpp;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

@@ -1,13 +1,7 @@
-package android.foivos.WOLpp;
+package com.foivos.WOLpp;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.foivos.WOLpp.UtilClasses.ChannelFeedCommandSet;
-import android.foivos.WOLpp.UtilClasses.ChannelFeedPair;
-import android.foivos.WOLpp.android.foivos.WOLpp.AsyncTasks.ActionRequester;
-import android.foivos.WOLpp.android.foivos.WOLpp.AsyncTasks.IndicationUpdater;
-import android.foivos.WOLpp.enums.Command;
-import android.foivos.WOLpp.enums.LedIndication;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +13,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.angryelectron.thingspeak.Channel;
+import com.foivos.WOLpp.UtilClasses.ChannelFeedCommandSet;
+import com.foivos.WOLpp.UtilClasses.ChannelFeedPair;
+import com.foivos.WOLpp.android.foivos.WOLpp.AsyncTasks.ActionRequester;
+import com.foivos.WOLpp.android.foivos.WOLpp.AsyncTasks.IndicationUpdater;
+import com.foivos.WOLpp.enums.Command;
+import com.foivos.WOLpp.enums.LedIndication;
 
 public class MainActivity extends AppCompatActivity {
     private final int commandFeedNo = 1;
