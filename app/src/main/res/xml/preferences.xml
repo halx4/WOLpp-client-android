@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="@string/channel_id_preference"
+        android:title="Channel ID"
+        android:summary="your thingspeak channel ID"
+        android:defaultValue="" />
+
+    <CheckBoxPreference
+        android:key="@string/is_publicly_readable_preference"
+        android:title="publicly readable channel"
+        android:summary="disable if it is not publicly readable"
+        android:defaultValue="true"
+        android:disableDependentsState="true" />
+
+    <EditTextPreference
+        android:key="@string/write_api_key_preference"
+        android:title="Write Api KEY"
+        android:defaultValue="" />
+
+    <EditTextPreference
+        android:key="@string/read_api_key_preference"
+        android:title="read Api KEY"
+        android:defaultValue=""
+        android:dependency="@string/is_publicly_readable_preference" />
+
+
+</PreferenceScreen>
