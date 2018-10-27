@@ -175,9 +175,9 @@ public class MainActivity extends AppCompatActivity {
         statusTextview = (TextView) findViewById(R.id.status_textView);
         statusLabelTextview = (TextView) findViewById(R.id.status_label_textView);
         commandTextview = (TextView) findViewById(R.id.command_textView);
-        commandLabelTextview = (TextView) findViewById(R.id.command_label_textView);
+        commandLabelTextview =  findViewById(R.id.command_label_textView);
 
-        powerShortButton = (Button) findViewById(R.id.power_short_button);
+        powerShortButton = findViewById(R.id.power_short_button);
         powerLongButton = (Button) findViewById(R.id.power_long_button);
         resetButton = (Button) findViewById(R.id.reset_button);
         updateButton = (Button) findViewById(R.id.update_button);
