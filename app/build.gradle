@@ -30,4 +30,5 @@ dependencies {
     implementation'com.macroyau:thingspeakandroid:0.2.0'
     testImplementation 'junit:junit:4.12'
     implementation project(':thingspeak')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
